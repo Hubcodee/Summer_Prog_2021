@@ -5,7 +5,7 @@ import imghdr
 
 def send_email(To, Subject, Message, files):
     print("######## Alert system !! ########\n ")
-    email = "testmailtesting17@gmail.com"
+    email = "example@gmail.com"
     password = "#####################"
     # contact-list
     contacts = []
