@@ -1,19 +1,12 @@
 from email.message import EmailMessage
 import smtplib
-# from decouple import config
 import imghdr
-# from django.conf import settings
 
-
-# To = "anshshrivas26@gmail.com"
-# Subject = "Face Detetcted !!"
-# Message = f"Encountered Timestamp : {date}"
-# filename = "photo.jpg"
 
 def send_email(To, Subject, Message, files):
     print("######## Alert system !! ########\n ")
     email = "testmailtesting17@gmail.com"
-    password = "Testmail#12345"
+    password = "#####################"
     # contact-list
     contacts = []
     contacts.append(To)
