@@ -6,6 +6,6 @@
 
 [✔] Buffer handling
 
-[] Error Handling 
+[X] Error Handling 
 
-[] Public IP stream
+[X] Public IP stream
