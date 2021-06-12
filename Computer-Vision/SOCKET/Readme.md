@@ -1,6 +1,6 @@
-# Video Stream - using TCP
+# 💻Video Stream - using TCP🔌
 
-### --> Python packages requirement
+### 📃 Python packages requirement
 `numpy`
 `socket`
 `cv2`
