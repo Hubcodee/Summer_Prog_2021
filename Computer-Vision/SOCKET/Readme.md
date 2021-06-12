@@ -1,11 +1,11 @@
 # Video Stream - using TCP
 
-[✔] Trasnferring videos
+- [x] Trasnferring videos
 
-[✔] Video lag
+- [x] Video lag
 
-[✔] Buffer handling
+- [x] Buffer handling
 
-[X] Error Handling 
+- [ ] Error Handling 
 
-[X] Public IP stream
+- [ ] Public IP stream
