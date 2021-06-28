@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <title>Kube-A-Call</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <script src="../kube/Scripts/kube.js"></script>
+</head>
+
+<body id="top">
+  <!-- Kube Logo -->
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+      <div id="logo" class="fl_left">
+        <!-- ################################################################################################ -->
+        <h1 class="logoname"><a href="index.html">Kube<span>-a-</span>call</a></h1>
+        <!-- ################################################################################################ -->
+        <h1>Chat friendly solution to Kubernetes command</h1>
+      </div>
+    </header>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="bgded overlay light" style="background-image:url('/html/chillaid/images/robot.jpg');">
+    <section id="services" class="hoc container clear">
+      <!-- ################################################################################################ -->
+      <div class="sectiontitle">
+        <p class="nospace font-xs">Just a word away solution</p>
+        <h6 class="heading font-x2">Type as you chat !! </h6>
+        <br>
+
+        <a href="" onclick="alert('Under process');"><i class="fab fa-speakap fa-3x interact"></i></a>
+      </div>
+
+      <div class="sectiontitle">
+        <label for="drop" class="heading font-x2">Commands you can run</label>
+        <select name="drop" class="in-decor">
+          <option>run pod using "image_name"></option>
+          <option>launch deployment using "image_name"></option>
+          <option>Scale deployment "name" by "value"</option>
+          <option>expose svc on "port" </option>
+          <option>destroy pod "name"</option>
+          <option>destroy deployment "name"</option>
+        </select>
+        <br>
+        <h6 class="heading font-x2" style="text-align: center;margin-bottom: 2%;">Type your requirement here!</h6>
+        <input type="text" id="in" class="in-decor" value="Your requirement !(press Enter after)" onclick="clear_in();">
+        <br>
+      </div>
+      <ul class="nospace group elements elements-three">
+        <li class="one_third">
+          <article class="w">
+            <h6 class="heading">Output</h6>
+            <pre>
+              <p id="resource" style="font-size: 25px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">            </p>
+            </pre>
+            <div id="loader"></div>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row5">
+    <div id="copyright" class="hoc clear">
+      <!-- ################################################################################################ -->
+      <p class="fl_left">Copyright &copy; 2021 - All Rights Reserved - <a href="#">LW summer Program Tasks</a></p>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+  <!-- JAVASCRIPTS -->
+  <script src="layout/scripts/jquery.min.js"></script>
+  <script src="layout/scripts/jquery.backtotop.js"></script>
+  <script src="layout/scripts/jquery.mobilemenu.js"></script>
+  <!-- Homepage specific -->
+  <script src="layout/scripts/jquery.easypiechart.min.js"></script>
+  <!-- / Homepage specific -->
+
+</body>
+
+</html>
