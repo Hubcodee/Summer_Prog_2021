@@ -1,0 +1,13 @@
+ 58  yum groupinstall "Development Tools"
+   59  pip3 install pyaudio
+   60  yum install python3-dev
+   61  yum install python-devel
+   62  yum install python3-devel
+   63  pip3 install pyaudio
+   64  yum -y install gcc
+   65  yum install openssl-devel
+   66  yum install libffi-devel -y
+   67  pip3 install pyttsx3
+   68  pip3 install pyaudio
+   69  yum install portaudio-devel alsa-lib-devel portaudio -y
+   70  pip3 install pyaudio
