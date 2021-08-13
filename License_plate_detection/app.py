@@ -4,45 +4,44 @@ from predictor import processImg
 import os
 from flask import Flask, render_template, request, redirect, url_for
 
-app = Flask(__name__)
+app = Flask("TEsting app")
 
-app.secret_key = "detectform"
+# app.secret_key = "detectform"
 
-Valid_ext = {'jpeg', 'png', 'jpeg'}
+# Valid_ext = {'jpg', 'png', 'jpeg'}
+
+# def valid_extension(filename):
+#     return '.' in filename and \
+#            filename.rsplit('.', 1)[1].lower() in Valid_ext
 
 
-def valid_extension(filename):
-    return '.' in filename and \
-           filename.rsplit('.', 1)[1].lower() in Valid_ext
+# path = os.getcwd()
+# UploadFolder = os.path.join(path, 'uploads')
+# if not os.path.isdir(UploadFolder):
+#     os.mkdir(UploadFolder)
 
+# BASE_DIR = os.getcwd()
+# dir = os.path.join(BASE_DIR, "uploads")
 
-path = os.getcwd()
-UploadFolder = os.path.join(path, 'uploads')
-if not os.path.isdir(UploadFolder):
-    os.mkdir(UploadFolder)
+# for root, dirs, files in os.walk(dir):
+#     for file in files:
+#         path = os.path.join(dir, file)
+#         os.remove(path)
 
-BASE_DIR = os.getcwd()
-dir = os.path.join(BASE_DIR, "uploads")
-
-for root, dirs, files in os.walk(dir):
-    for file in files:
-        path = os.path.join(dir, file)
-        os.remove(path)
-
-app.config['UPLOAD_FOLDER'] = UploadFolder
+# app.config['UPLOAD_FOLDER'] = UploadFolder
 
 # Home Page
-
-
+#base page
 @app.route('/')
 def index():
     return render_template('index.html')
 
 # Prediction - Vehicle Details Page
-
-
+#result
 @app.route('/result', methods=['POST'])
 def upload_file():
+    file = cgiField()
+    v = form.getvalue('x')
     global ImgPath
     uploaded_file = request.files['file']
     if uploaded_file.filename != '':
